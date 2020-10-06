@@ -1,0 +1,15 @@
+Shell script to  find the BIGGEST OF THREE NUMBERS using test operator and logical and && operator.
+
+
+echo "Enter three numbers"
+read num1 num2 num3
+if test $num1 -gt $num2 && test $num1 -gt $num3
+then
+    echo "$num1 is the biggest"
+elif test $num2 -gt $num1 && test $num2 -gt $num3
+then
+    echo "$num2 is the biggest"
+elif test $num3 -gt $num1 && test $num3 -gt $num2
+then
+    echo "$num3 is the biggest"
+fi
