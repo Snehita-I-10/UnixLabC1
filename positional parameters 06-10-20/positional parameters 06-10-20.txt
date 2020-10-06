@@ -1,0 +1,15 @@
+Write a shell Script to accept two command Line parameters  Using Positional  parameter
+technique display the file attributes of the parameters .Use appropriate if conditions in the program to chk the number of arguments 
+
+
+
+if test $# -eq 0
+then
+    echo "No parameters passed"
+elif test $# -eq 2
+then
+    echo `ls -l $1`||echo "$1 not found"
+    echo `ls -l $2`||echo "$2 not found"
+else
+    echo "Please pass 2 parameters"
+fi
