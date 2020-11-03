@@ -1,0 +1,4 @@
+echo "Enter temperature"
+read tc
+tf=$(echo "scale=2;((9/5) * $tc) + 32"|bc)
+echo "$tc c = $tf f"
