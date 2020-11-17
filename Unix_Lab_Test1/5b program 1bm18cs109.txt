@@ -1,0 +1,5 @@
+echo "enter the filename"
+read fname
+echo `ls -l $fname`
+chmod ugo+rwx $fname
+echo `ls -l $fname`
