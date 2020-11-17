@@ -1,0 +1,18 @@
+echo "Enter file path: "
+read path
+touch temp.txt
+replace="retupmoc"
+for w in `cat $path`
+do
+	case $w in
+		"computer")
+			echo "$replace"
+			;;
+		*)
+			echo "$w"
+			;;
+	esac
+done >> temp.txt
+rm -rf $path
+cp temp.txt $path
+rm -rf temp.txt
